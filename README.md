@@ -12,10 +12,19 @@ Configuration UI for Custom Rule Nodes from rule-node-examples ThingsBoard repos
     ```
     npm run getthingsboard 
     ```
-3) Install dependencies
+3/a) Install dependencies
     ```
     npm install 
+
     ```
+3/b) Change node_modules/thingsboard/tsconfig.json to this:
+    ...
+    "lib": [
+        "ES2019",
+        "ES2018",
+        "dom"
+    ],
+    ...
 4) Production build    
     ```
     npm run build 
