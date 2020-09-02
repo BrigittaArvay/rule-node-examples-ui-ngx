@@ -1,0 +1,25 @@
+<section [formGroup]="getTelemetryAndAggregateConfigForm" fxLayout="column">
+    <label translate class="tb-title tb-required">tb.rulenode.device-relations-query</label>
+    <tb-device-relations-query-config
+        required
+        formControlName="deviceRelationsQuery"
+        style="padding-bottom: 15px;">
+    </tb-device-relations-query-config>
+    <mat-form-field class="mat-block">
+        <mat-label translate>tb.rulenode.aggregate-function</mat-label>
+        <select matNativeControl formControlName="aggregateFunction" required>
+            <option value="" selected></option>
+            <option *ngFor="let function of aggregateFunctions" [value]="function">
+              {{function}}
+            </option>
+        </select>
+    </mat-form-field>
+    <mat-form-field class="mat-block">
+        <mat-label translate>tb.rulenode.input-key</mat-label>
+        <input matInput formControlName="inputKey" required>
+    </mat-form-field>
+    <mat-form-field class="mat-block">
+        <mat-label translate>tb.rulenode.output-key</mat-label>
+        <input matInput formControlName="outputKey" required>
+    </mat-form-field>
+</section>

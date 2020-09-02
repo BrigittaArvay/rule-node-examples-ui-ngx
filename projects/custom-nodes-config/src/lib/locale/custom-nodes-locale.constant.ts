@@ -7,7 +7,8 @@ export default function addCustomNodesLocaleEnglish(translate: TranslateService)
         rulenode: {
           'msg-key': 'Message key',
           'input-key': 'Input key',
-          'output-key': 'Output key'
+          'output-key': 'Output key',
+          'aggregate-function': 'Aggregate function'
         }
       }
     };

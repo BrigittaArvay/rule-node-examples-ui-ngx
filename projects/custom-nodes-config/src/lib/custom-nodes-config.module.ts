@@ -20,8 +20,10 @@ import { CustomNodesConfigTransformModule } from './components/transform/custom-
     CustomNodesConfigFilterModule,
     CustomNodesConfigEnrichmentModule,
     CustomNodesConfigTransformModule
-  ]
+  ],
+  declarations: []
 })
+
 export class CustomNodesConfigModule {
 
   constructor(translate: TranslateService) {
